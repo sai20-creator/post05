@@ -1,0 +1,32 @@
+-- DROP DATABASE IF EXISTS MSDS;
+-- CREATE DATABASE MSDS;
+
+-- DROP TABLE IF EXISTS Users;
+-- DROP TABLE IF EXISTS Userdata;
+
+-- \c go;
+
+-- CREATE TABLE Users (
+--     ID SERIAL,
+--     Username VARCHAR(100) PRIMARY KEY
+-- );
+
+-- CREATE TABLE Userdata (
+--     UserID Int NOT NULL,
+--     Name VARCHAR(100),
+--     Surname VARCHAR(100),
+--     Description VARCHAR(200)
+-- );
+
+DROP DATABASE IF EXISTS MSDS;
+CREATE DATABASE MSDS;
+
+DROP TABLE IF EXISTS MSDSCourseCatalog;
+
+\c MSDS;
+
+CREATE TABLE MSDSCourseCatalog (
+    CID VARCHAR(100) PRIMARY KEY,
+    CNAME VARCHAR(200),
+    CPREREQ VARCHAR(200)
+);
