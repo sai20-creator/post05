@@ -18,17 +18,14 @@
 --     Description VARCHAR(200)
 -- );
 
--- Drop the database if it exists
 DROP DATABASE IF EXISTS MSDS;
-
--- Create the MSDS database
 CREATE DATABASE MSDS;
 
--- Connect to the MSDS database
+DROP TABLE IF EXISTS MSDSCourseCatalog;
+
 \c MSDS;
 
--- Create the MSDSCourseCatalog table
-CREATE TABLE IF NOT EXISTS MSDSCourseCatalog (
+CREATE TABLE MSDSCourseCatalog (
     CID VARCHAR(100) PRIMARY KEY,
     CNAME VARCHAR(200),
     CPREREQ VARCHAR(200)
