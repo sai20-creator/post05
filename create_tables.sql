@@ -18,7 +18,7 @@
 --     Description VARCHAR(200)
 -- );
 
-Drop the database if it exists
+-- Drop the database if it exists
 DROP DATABASE IF EXISTS MSDS;
 
 -- Create the MSDS database
