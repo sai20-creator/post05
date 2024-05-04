@@ -25,7 +25,7 @@ DROP DATABASE IF EXISTS MSDS;
 CREATE DATABASE MSDS;
 
 -- Connect to the MSDS database
-\c MSDS;
+-- \c MSDS;
 
 -- Create the MSDSCourseCatalog table
 CREATE TABLE IF NOT EXISTS MSDSCourseCatalog (
